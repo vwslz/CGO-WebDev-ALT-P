@@ -1,0 +1,68 @@
+.jumbotron {
+  padding:70px 30px 70px 30px;
+  margin:0px auto;
+    background-color: #cef2ce;
+    color: #1c9c1c;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:300px;
+}
+
+.footer{
+    background-color: #cef2ce;;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-dark {
+     background-color: #512DA8;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.bootstrap-jumbotron {
+  color: purple;
+  background: white;
+}
+
+.logo-alt-p {
+   background-color: #4c5965;
+   width: 225px;
+   margin: 10px;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: #1c9c1c !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #cef2ce !important;
+}
+
+ul.nav li.active a {
+    color: #cef2ce !important;
+}
+
+footer a, footer a:visited{
+  color: #1c9c1c;
+}
