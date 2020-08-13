@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b94f7d9384.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>中南屋秘鲁中文网站开发 JavaScript</title>
+</head>
+
+<body>
+  <h2 class="text-center text-muted py-3">中南屋秘鲁中文网站开发 JavaScript</h2>
+
+  <div class="container py-2 mt-4 mb-4">
+
+    <!-- Introduction card -->
+    <div class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card border-success shadow">
+          <div class="card-body">
+            <div class="float-right text-success small"><i class="fas fa-heart"></i></div>
+            <h4 class="card-title text-success">Welcome to Lecture 5: JavaScript</h4>
+            <p class="card-text">In this lecture we will learn basic JavaScript.</p>
+            <button id="sessions" class="btn btn-sm btn-outline-secondary dropdown-toggle"
+             type="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Sessions</button>
+            <div class="dropdown-menu border" aria-labelledby="sessions">
+              <a href="index.html#session-environment" class="dropdown-item text-muted">Adjust the Environment</a>
+              <a href="index.html#session-variable" class="dropdown-item text-muted">Variable</a>
+              <a href="index.html#session-function" class="dropdown-item text-muted">Function</a>
+              <a href="index.html#session-dom" class="dropdown-item text-muted">DOM</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-success">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <!-- JavaScript Basic: Adjust the Environment -->
+    <div id="session-environment" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">JavaScript Basic</h4>
+            <p class="card-text">Where to place JavaScript Code?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">External File</h4>
+            <p class="card-text">&lt;script src="js/script.js"&gt;&lt;/script&gt; </p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Inside &lt;script&gt; Tag</h4>
+            <p class="card-text">&lt;script&gt; ...... &lt;/script&gt; </p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="alert alert-light alert-dismissible fade show border" role="alert">
+          The reference can be placed in either &lt;head&gt; or &lt;body&gt;
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" class="text-success"><i class="fas fa-check"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Basic: Variable -->
+    <div id="session-def-variable" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">JavaScript Basic</h4>
+            <p class="card-text">Variable</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Defination</h4>
+            <p class="card-text">var message = "Welcome to JavaScipt";</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+        <div class="alert alert-light alert-dismissible fade show border" role="alert">
+          Variable definition should <strong>always</strong> start with 'var'.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" class="text-success"><i class="fas fa-check"></i></span>
+          </button>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="alert alert-light alert-dismissible fade show border" role="alert">
+          <strong>No</strong> types are declared.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" class="text-success"><i class="fas fa-check"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Basic: Function -->
+    <div id="session-def-function" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">JavaScript Basic</h4>
+            <p class="card-text">Function</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Defination</h4>
+            <p class="card-text">function a() {...}</p>
+            <p class="card-text">var a = function {...}</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="alert alert-light alert-dismissible fade show border" role="alert">
+          For the second way, value of function is assigned to a, not the returned result.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" class="text-success"><i class="fas fa-check"></i></span>
+          </button>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Execution</h4>
+            <p class="card-text">a()</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title"><font id="arg-btn" color="purple">Arguments</font> and <font id="res-btn" class="text-primary">Returned Values</font></h4>
+            <p class="card-text">var <font id="res">res</font> = function compare(<font id="arg">x, y</font>);</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Basic: Function Q&A -->
+    <div class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">Question:</h4>
+            <p class="card-text">Are the executions legal?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">var a = compare(1, 2);</p>
+            <p class="card-text">compare(1, "a");</p>
+            <p class="card-text">compare();</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div id="func-ans">
+          <p id="func-ans-btn"><i class="text-warning fas fa-question"></i></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Basic: Scope -->
+    <div id="session-def-scope" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">JavaScript Basic</h4>
+            <p class="card-text">Scope</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Global</h4>
+            <p class="card-text">Variables and functions defined here are available everywhere</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Function (aka lexical)</h4>
+            <p class="card-text">Variables and funcitons defined here are available only within this function</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div id="scope-chain-q-btn">
+          <p>Can we define a function within another function <i class="text-warning fas fa-question"></i></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Basic: Scope Chain -->
+    <div id="session-def-scope-chain" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">JavaScript Basic</h4>
+            <p class="card-text">Scope Chain</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Execution Context</h4>
+            <p class="card-text">Everything in JS is executed in an Execution Context</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Component</h4>
+            <p class="card-text">Variable Environment</p>
+            <p class="card-text">'This' Object</p>
+            <p class="card-text">Reference to its Outer Environment</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="alert alert-light alert-dismissible fade show border" role="alert">
+          Global scope does <strong>not</strong> have an Outer Environment
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" class="text-success"><i class="fas fa-check"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Variable: Type -->
+    <div id="session-variable" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">Variable</h4>
+            <p class="card-text">Build-in Types</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">6 Primitive Types</h4>
+            <p class="card-text" data-toggle="tooltip" data-placement="right" title="true / false">Boolean</p>
+            <p class="card-text" data-toggle="tooltip" data-placement="right" title="the value is never set">Undefined</p>
+            <p class="card-text" data-toggle="tooltip" data-placement="right" title="lack of value">Null</p>
+            <p class="card-text" data-toggle="tooltip" data-placement="right" title="only numeric">Number</p>
+            <p class="card-text" data-toggle="tooltip" data-placement="right" title="sequence of characters">String</p>
+            <p class="card-text" data-toggle="tooltip" data-placement="right" title="(released 2015) isn't widely supported or used yet">Symbol</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Object Type</h4>
+            <p class="card-text" data-toggle="tooltip" data-placement="right" title="a collection of name/value pairs">Object</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Array</h4>
+            <p class="card-text">List-like object</p>
+            <p class="card-text">Can be accessed by index</p>
+            <p class="card-text">Due to dynamic typing, neither the length of a JavaScript array nor the types of its elements are fixed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Variable: Create Objects -->
+    <div id="session-variable-create" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">Variable</h4>
+            <p class="card-text">Create Objects</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">"new"</h4>
+            <p class="card-text">var a = new Object();</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Object Literal Syntax</h4>
+            <p class="card-text">var a = {name: value, ..., name: value}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Function: Basic -->
+    <div id="session-function" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">Function</h4>
+            <p class="card-text">Introduce basic concepts</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Prototype</h4>
+            <p class="card-text">Something that's going to be existent on every single instance of this object</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">"This" keywood</h4>
+            <p class="card-text">Point to the current objects that gets created</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Function: Pass -->
+    <div id="session-function-pass" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">Function</h4>
+            <p class="card-text">Pass to function</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Primitives are passed by value</h4>
+            <p class="card-text">var a = 0;</p>
+            <p class="card-text">var b = a;</p>
+            <p class="card-text">b = 1;</p>
+            <p id="func-pass-a1" class="card-text">var a = <i class="text-warning fas fa-question"></i>;</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Objects are passed by reference</h4>
+            <p class="card-text">var a.x = 0;</p>
+            <p class="card-text">var b = a;</p>
+            <p class="card-text">b.x = 1;</p>
+            <p id="func-pass-a2" class="card-text">a.x = <i class="text-warning fas fa-question"></i>;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Function: IIFEs -->
+    <div id="session-function-iife" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">Function</h4>
+            <p class="card-text">Immediately Invoked Function Expression(IIFEs)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Original</h4>
+            <p class="card-text">var a = function (<font id="par1" color="violet">parameter</font>) {...};</p>
+            <p class="card-text">a(<font id="val1" color="orange">value</font>);</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">IIFE</h4>
+            <p class="card-text">$(function (<font id="par2">parameter</font>)...(<font id="val2">value</font>);</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Function: DOM -->
+    <div id="session-dom" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">DOM</h4>
+            <p class="card-text">Document Object Model</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-light border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm"> <!--spacer--> </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-sm"> <!--spacer--> </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Defination</h4>
+            <p class="card-text">DOM connects web pages to scripts or programming languages by representing the structure of a document.</p>
+            <h5 class="card-text">HTML DOM</h5>
+            <p class="card-text">The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">HTML sample</h4>
+            <p class="card-text">&lt;h6 id="title"&gt;Say Hi!&lt;/h6"&gt;</p>
+            <h6 class="card-text" id="title"><i class="text-success fas fa-play" id="dom-title-btn"></i></h6>
+            <p class="card-text">&lt;p&gt;My name is &lt;input id="name" type="text"&gt;&lt;button&gt;Hi!&lt;/button&gt;&lt;/p&gt;</p>
+            <p class="card-text" id="name-div"><i class="text-success fas fa-play" id="dom-name-btn"></i></p>
+            <p class="card-text">&lt;div id="content"&gt;&lt;/div&gt;</p>
+            <div class="card-text" id="content"><i class="text-success fas fa-play" id="dom-content-btn"></i></div>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">DOM Manipulation</h4>
+            <p class="card-text">console.log(<br>&emsp;document.<br>&emsp;&emsp;getElementById("title")<br>);</p>
+            <p class="card-text">console.log(document instanceof HTMLDocument);</p>
+            <p class="card-text" id="get-title"><i class="text-success fas fa-play" id="dom-get-title"></i></p>
+            <p class="card-text">sayHi() call when the button is clicked</p>
+            <p class="card-text" id="get-func"><i class="text-success fas fa-play" id="dom-get-func"></i></p>
+          </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Event Handling</h4>
+            <p class="card-text" id="event-page-btn"><i class="text-success fas fa-browser"></i> API documentation for event</p>
+            <p class="card-text">.addEventListener("mousemove", function (event) {</p>
+            <p class="card-text">&emsp;console.log(event.clientX)</p>
+            <p class="card-text">&emsp;console.log(event.clientY)</p>
+            <p class="card-text">});</p>
+            <p class="card-text" id="get-xy"><i class="text-success fas fa-play" id="dom-get-xy"></i></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Function: Thanks -->
+    <div id="session-thanks" class="row no-gutters">
+      <div class="col-sm py-2">
+        <div class="card border-success shadow">
+          <div class="card-body">
+            <div class="float-right text-muted small"></div>
+            <h4 class="card-title">Congratulations!</h4>
+            <p class="card-text">Now you have finished Lecture 5: JavaScipt.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-success border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="col-sm py-2">
+        <div class="card border-success shadow">
+          <div class="card-body">
+            <h4 class="card-title">Lecturer</h4>
+            <p class="card-text">Yimin Zhu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="js/function.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/compare.js"></script>
+
+</body>
+</html>
